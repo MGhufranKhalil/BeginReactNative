@@ -8,6 +8,13 @@ import FixedDimensionsBasics from './FixedDimensionsBasics';
 import FlexDimensionsBasics from './FlexDimensionsBasics';
 import FlexDirectionBasics from './FlexDirectionBasics';
 import JustifyContentBasics from './JustifyContentBasics';
+import AlignItemsBasics from './AlignItemsBasics';
+import PizzaTranslator from './PizzaTranslator';
+import ButtonBasics from './ButtonBasics';
+import Touchables from './Touchables';
+import SectionListBasics from './SectionListBasics';
+import FlatListBasics from './FlatListBasics';
+import FetchExample from './FetchExample';
 
 export default class Basics extends Component {
   render() {
@@ -35,11 +42,33 @@ export default class Basics extends Component {
         <Text style={styles.Heading}>5.1 - Flex Dimensions </Text>
         <FlexDimensionsBasics/>
 
-        <Text style={styles.Heading}>6 - Flex Directions </Text>
+        <Text style={styles.Heading}>6.1 - Flex Directions </Text>
         <FlexDirectionBasics/>
 
-        <Text style={styles.Heading}>6 - Justify Content </Text>
+        <Text style={styles.Heading}>6.2 - Justify Content </Text>
         <JustifyContentBasics/>
+
+        <Text style={styles.Heading}>6.3 - Align Item Basics </Text>
+        <AlignItemsBasics/>
+
+        <Text style={styles.Heading}>7 - Pizza Translator </Text>
+        <PizzaTranslator/>
+
+        <Text style={styles.Heading}>8.1 - Basics Button</Text>
+        <ButtonBasics/>
+
+        <Text style={styles.Heading}>8.2 - Touchables</Text>
+        <Touchables/>
+
+        <Text style={styles.Heading}>9.1 - Flate List Basics</Text>
+        <FlatListBasics/>
+
+        <Text style={styles.Heading}>9.2 - Section List</Text>
+        <SectionListBasics/>
+
+        <Text style={styles.Heading}>10 - Fetch Example</Text>
+        <FetchExample/>
+
       </ScrollView>
     );
   }
